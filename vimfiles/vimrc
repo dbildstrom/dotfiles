@@ -1,0 +1,22 @@
+syntax on
+set nu
+set encoding=utf-8
+filetype plugin on
+
+colorscheme industry
+set nocompatible
+set noswapfile
+set nobackup
+set nobomb
+
+set hlsearch
+set ttyfast
+set laststatus=2
+set fileformats=unix,dos,mac
+set cmdheight=2
+set title
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set smarttab
