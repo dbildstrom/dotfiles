@@ -1,12 +1,19 @@
-syntax on
 set nu
 set encoding=utf-8
 filetype plugin on
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
-set background=light
-colorscheme solarized
+"style
+syntax on
+if(&t_Co==256)
+    set background=light
+    colorscheme solarized
+else
+    colorscheme desert
+endif
+
+
 set nocompatible
 set noswapfile
 set nobackup
