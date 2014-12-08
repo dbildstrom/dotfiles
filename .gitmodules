@@ -34,3 +34,9 @@
 [submodule "vimfiles/bundle/bufexplorer"]
 	path = vimfiles/bundle/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer
+[submodule "vimfiles/bundle/vim-ah-schema"]
+	path = vimfiles/bundle/vim-ah-schema
+	url = https://github.com/tbjurman/vim-ah-schema
+[submodule "vimfiles/bundle/vim-tbj-docgenerator"]
+	path = vimfiles/bundle/vim-tbj-docgenerator
+	url = https://github.com/tbjurman/vim-tbj-docgenerator
