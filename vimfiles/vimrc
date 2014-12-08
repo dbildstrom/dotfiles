@@ -19,6 +19,7 @@ set noswapfile
 set nobackup
 set nobomb
 
+set nofoldenable
 set hlsearch
 set ttyfast
 set laststatus=2
