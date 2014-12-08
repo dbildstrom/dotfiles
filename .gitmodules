@@ -25,3 +25,12 @@
 [submodule "vimfiles/bundle/python-mode"]
 	path = vimfiles/bundle/python-mode
 	url = https://github.com/klen/python-mode
+[submodule "vimfiles/bundle/vim-table-mode"]
+	path = vimfiles/bundle/vim-table-mode
+	url = https://github.com/dhruvasagar/vim-table-mode
+[submodule "vimfiles/bundle/hexmode"]
+	path = vimfiles/bundle/hexmode
+	url = https://github.com/fidian/hexmode
+[submodule "vimfiles/bundle/bufexplorer"]
+	path = vimfiles/bundle/bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer
