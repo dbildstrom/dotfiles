@@ -40,3 +40,6 @@
 [submodule "vimfiles/bundle/vim-tbj-docgenerator"]
 	path = vimfiles/bundle/vim-tbj-docgenerator
 	url = https://github.com/tbjurman/vim-tbj-docgenerator
+[submodule "vimfiles/bundle/vim-multiple-cursors"]
+	path = vimfiles/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
