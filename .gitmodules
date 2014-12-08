@@ -43,3 +43,12 @@
 [submodule "vimfiles/bundle/vim-multiple-cursors"]
 	path = vimfiles/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "vimfiles/bundle/tComment"]
+	path = vimfiles/bundle/tComment
+	url = https://github.com/vim-scripts/tComment
+[submodule "vimfiles/bundle/ctrlp.vim"]
+	path = vimfiles/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "vimfiles/bundle/vim-surround"]
+	path = vimfiles/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
