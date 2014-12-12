@@ -55,3 +55,9 @@
 [submodule "vimfiles/bundle/xoria256.vim"]
 	path = vimfiles/bundle/xoria256.vim
 	url = https://github.com/vim-scripts/xoria256.vim
+[submodule "vimfiles/bundle/vim-css3-syntax"]
+	path = vimfiles/bundle/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "vimfiles/bundle/vim-less"]
+	path = vimfiles/bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
