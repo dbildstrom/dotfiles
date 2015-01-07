@@ -65,3 +65,10 @@ inoremap jj <esc>
 " remap for moving up/down in wrapped lines
 nnoremap j gj
 nnoremap k gk
+
+" Python Mode
+let g:pymode_folding = 0
+let g:pymode_lint_on_write = 0
+let g:pymode_trim_whitespaces = 0
+let g:pymode_rope = 0
+nnoremap <F7> :PymodeLint<CR>
