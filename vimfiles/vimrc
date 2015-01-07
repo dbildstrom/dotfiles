@@ -31,3 +31,37 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set smarttab
+
+nmap <leader>sv :source $MYVIMRC<cr>
+
+nnoremap <S-F> :CtrlP<CR>
+nnoremap <C-N> :bn<CR>
+nnoremap <C-P> :bp<CR>
+map <leader>c :TComment<cr>
+" disable Ex mode
+nnoremap Q <nop>
+
+" I never use ';' in normal mode, so map it to ':' to avoid unnecessary
+" keystrokes
+noremap ; :
+
+nmap <silent> <leader>/ :nohlsearch<CR>
+" unmap arrow keys
+map <UP> <nop>
+map <DOWN> <nop>
+map <LEFT> <nop>
+map <RIGHT> <nop>
+
+" remap window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" unmap escape key
+inoremap <esc> <nop>
+" remap 'jj' in insert mode to escape
+inoremap jj <esc>
+" remap for moving up/down in wrapped lines
+nnoremap j gj
+nnoremap k gk
