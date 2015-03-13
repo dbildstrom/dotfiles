@@ -61,3 +61,6 @@
 [submodule "vimfiles/bundle/vim-erlang-skeletons"]
 	path = vimfiles/bundle/vim-erlang-skeletons
 	url = https://github.com/marutha/vim-erlang-skeletons
+[submodule "vimfiles/bundle/vim-mac-classic-theme"]
+	path = vimfiles/bundle/vim-mac-classic-theme
+	url = https://github.com/nelstrom/vim-mac-classic-theme.git
