@@ -19,9 +19,6 @@
 [submodule "vimfiles/bundle/vimerl"]
 	path = vimfiles/bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl
-[submodule "vimfiles/bundle/vim-erlang-skeletons"]
-	path = vimfiles/bundle/vim-erlang-skeletons
-	url = https://github.com/aerosol/vim-erlang-skeletons
 [submodule "vimfiles/bundle/python-mode"]
 	path = vimfiles/bundle/python-mode
 	url = https://github.com/klen/python-mode
