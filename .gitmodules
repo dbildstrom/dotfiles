@@ -58,3 +58,6 @@
 [submodule "vimfiles/bundle/vim-less"]
 	path = vimfiles/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "vimfiles/bundle/vim-erlang-skeletons"]
+	path = vimfiles/bundle/vim-erlang-skeletons
+	url = https://github.com/marutha/vim-erlang-skeletons
