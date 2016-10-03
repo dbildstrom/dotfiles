@@ -1,0 +1,3 @@
+#!/bin/sh
+
+youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=mp3]/best[ext=mp4]/best' "$@"
