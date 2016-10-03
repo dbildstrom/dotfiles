@@ -34,6 +34,8 @@ set smarttab
 
 nmap <leader>sv :source $MYVIMRC<cr>
 
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
 nnoremap <S-F> :CtrlP<CR>
 nnoremap <C-N> :bn<CR>
 nnoremap <C-P> :bp<CR>
