@@ -1,7 +1,4 @@
 
-export PATH=~/remote/RDP:~/git/visma/bin:$PATH
-export PYTHONPATH=~/git/visma/bin
-
 if [ -f /usr/share/bash_completion/bash_completion ]; then
     /usr/share/bash_completion/bash_completion
 fi
