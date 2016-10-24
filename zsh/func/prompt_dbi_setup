@@ -55,7 +55,7 @@ set_git_branch () {
 }
 
 prompt_dbi_setup () {
-    local verbose=1
+    local verbose=
     typeset -A colorcode
     colorcode[black]=0
     colorcode[red]=1
@@ -117,7 +117,7 @@ prompt_dbi_setup () {
         PROMPT+="$pc[user]%n$pc[reset]"
         PROMPT+="@$pc[host]%m$pc[reset]"
     fi
-    PROMPT+=":$pc[shortpath]%~$pc[reset]"
+    PROMPT+=":$pc[shortpath]%3~$pc[reset]"
     PROMPT+="\$(set_scm)"
     PROMPT+=" $pc[default]\$ $pc[reset]"
     export PROMPT
