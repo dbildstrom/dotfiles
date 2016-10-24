@@ -29,7 +29,7 @@ is_git_repository () {
 
 set_git_branch () {
   local -A pc
-    pc=(${(kv)bajs_colors})
+    pc=(${(kv)prompt_colors})
     local git_status="$(git status 2> /dev/null)"
     local state=""
 
@@ -98,7 +98,6 @@ prompt_dbi_setup () {
        pc[${cn}]=$(colorword $pc[$cn])
     done
     pc[reset]=$(colorword . . 00)
-    pc[bajs]=$(colorword magenta)
     pc[user]=$(colorword Green)
     pc[shortpath]=$(colorword Blue . bold)
     pc[git_clean_branch]=$(colorword Green . bold)
@@ -107,8 +106,8 @@ prompt_dbi_setup () {
     pc[git_untracked_files]=$(colorword Cyan . bold)
     pc[git_unclean_branch]=$(colorword magenta . bold)
 
-    typeset -Ag bajs_colors
-    bajs_colors=(${(kv)pc})
+    typeset -Ag prompt_colors
+    prompt_colors=(${(kv)pc})
     PROMPT=""
 
     #POMPT+="$pc[divider]\$(repeat \$COLUMNS printf '-')$pc[reset]"
