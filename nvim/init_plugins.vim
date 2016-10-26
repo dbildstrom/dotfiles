@@ -10,8 +10,8 @@ if empty(glob(vimplugpath))
     source $VIMHOME/vim_plugins.vimrc
 else
     source $VIMHOME/vim_plugins.vimrc
-    :PlugUpgrade
-    :PlugUpdate
+    autocmd VimEnter * :PlugUpgrade
+    autocmd VimEnter * :PlugUpdate
 endif
 
 
