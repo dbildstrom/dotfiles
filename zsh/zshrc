@@ -24,6 +24,7 @@ if [[ "$TERM" == "xterm" ]]; then
 fi
 
 
+export PATH=~/bin:$PATH
 export EDITOR='vim'
 alias public_ip="curl -s http://ipinfo.io/ip"
 
