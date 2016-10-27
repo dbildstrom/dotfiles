@@ -8,6 +8,7 @@ set encoding=utf-8
 filetype plugin on
 filetype plugin indent on
 syntax on
+set mouse=
 
 set directory=$VIMHOME/swapfiles//
 set backupdir=$VIMHOME/backup//
