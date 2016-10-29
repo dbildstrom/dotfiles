@@ -10,8 +10,9 @@ filetype plugin indent on
 syntax on
 set mouse=
 
-set directory=$VIMHOME/swapfiles//
-set backupdir=$VIMHOME/backup//
+set directory=$VIMHOME/swap_files//
+set backupdir=$VIMHOME/backup_files//
+set undodir=$VIMHOME/undo_files//
 
 set nocompatible
 set nobomb
