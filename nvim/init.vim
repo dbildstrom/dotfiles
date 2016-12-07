@@ -38,4 +38,4 @@ nnoremap <C-P> :bp<CR>
 map <leader>c :TComment<cr>
 nmap <silent> <leader>/ :set hlsearch!<CR>
 
-let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,*.o,*.pyc,*.pyo"
+let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,*.o,*.pyc,*.pyo,.svn"
