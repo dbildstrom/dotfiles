@@ -46,12 +46,21 @@ set_git_branch () {
     fi
 
   local branch="<untitled>"
-  # Get the name of the branch.
-  if [[ ${git_status} =~ "^On branch (\S+)" ]]; then
-    branch=$match[1]
+  local name="`git symbolic-ref -q HEAD`"
+  if [ $? -eq 0 ];then
+    if [[ $name == refs/(heads|tags)/* ]];then
+        name=${name#refs/(heads|tags)/}
+    fi
+  else
+    name="`git name-rev --name-only --no-undefined --always HEAD`"
+    if [ $? -ne 0 ];then
+        return 1
+    elif [[ $name == remotes/* ]];then
+        name=${name#remotes/}
+    fi
   fi
+  branch="${name}"
     echo " ${state}(${branch})$pc[reset]"
-    #echo "$pc[host](master)$pc[reset]"
 }
 
 prompt_dbi_setup () {
