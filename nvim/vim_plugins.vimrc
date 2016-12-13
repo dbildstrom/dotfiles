@@ -12,5 +12,8 @@ Plug 'vim-scripts/tComment'
 " Plugins for Visma Consulting
 Plug 'tbjurman/vim-ah-schema'
 Plug 'tbjurman/vim-tbj-docgenerator'
+
+Plug 'tbjurman/vim-lux'
+Plug 'tbjurman/vim-yang'
 call plug#end()
 
