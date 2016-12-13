@@ -1,0 +1,21 @@
+[alias]
+    aa = add --all
+    d = diff
+    dc = diff --cached
+    ci = commit
+    co = checkout
+    sr = svn rebase
+    sd = svn dcommit
+    gsc = svn clone --prefix=svn/ -s -A /home/bildsdav/Authors.txt
+    st = status
+    hist = log --oneline --decorate=short --graph
+    history = log --oneline --decorate=short --graph --all
+    logg = log --pretty=format:\"%C(red)%h%Creset%C(auto)%d%Creset %s%C(bold green) %C(bold green)(%ar) %C(bold blue)(%an)%Creset\" --graph
+    logga = log --pretty=format:\"%C(red)%h%Creset%C(auto)%d%Creset %s%C(bold green) %C(bold green)(%ar) %C(bold blue)(%an)%Creset\" --graph --all
+    ls = ls-tree --abbrev HEAD
+    rbranches = for-each-ref --sort=committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+    branches = for-each-ref --sort=committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/heads
+    tagsd = for-each-ref --sort=committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/tags
+    tagss = for-each-ref --sort=v:refname --format=\"%(color:white)%(color:bold)%(refname:short)\t%(color:red)%(authorname)\t%(color:blue)%(authordate:relative)\" refs/tags
+    tagss2 = !git tag -l | sort -V
+    untagged = !git log `git describe --tags --abbrev=0`~1..HEAD --oneline --decorate=short --graph
