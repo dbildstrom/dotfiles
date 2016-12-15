@@ -8,6 +8,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'vim-scripts/DirDiff.vim'
 
 Plug 'vim-scripts/tComment'
+Plug 'neomake/neomake'
 
 " Plugins for Visma Consulting
 Plug 'tbjurman/vim-ah-schema'
