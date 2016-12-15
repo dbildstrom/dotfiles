@@ -8,6 +8,7 @@ Plug 'michalbachowski/vim-wombat256mod'
 Plug 'flazz/vim-colorschemes'
 
 " General plugins
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'vim-scripts/DirDiff.vim'
 Plug 'vim-scripts/tComment'
 Plug 'neomake/neomake'
