@@ -1,3 +1,4 @@
 nvim/autoload/
+nvim/node_modules/
 nvim/plugged/
 nvim/swap_files/
