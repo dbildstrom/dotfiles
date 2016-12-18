@@ -8,6 +8,8 @@ Plug 'michalbachowski/vim-wombat256mod'
 Plug 'flazz/vim-colorschemes'
 Plug 'lifepillar/vim-solarized8'
 Plug 'cocopon/iceberg.vim'
+Plug 'vim-scripts/tir_black'
+Plug 'duythinht/inori'
 
 " General plugins
 Plug 'ntpeters/vim-better-whitespace'
