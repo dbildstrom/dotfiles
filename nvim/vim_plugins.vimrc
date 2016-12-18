@@ -15,6 +15,7 @@ Plug 'duythinht/inori'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'vim-scripts/DirDiff.vim'
 Plug 'vim-scripts/tComment'
+Plug 'airblade/vim-gitgutter'
 Plug 'neomake/neomake'
 
 " Plugins for work
