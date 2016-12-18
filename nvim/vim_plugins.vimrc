@@ -6,6 +6,8 @@ Plug 'endel/vim-github-colorscheme'
 Plug 'guns/jellyx.vim'
 Plug 'michalbachowski/vim-wombat256mod'
 Plug 'flazz/vim-colorschemes'
+Plug 'lifepillar/vim-solarized8'
+Plug 'cocopon/iceberg.vim'
 
 " General plugins
 Plug 'ntpeters/vim-better-whitespace'
