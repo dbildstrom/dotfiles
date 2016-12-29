@@ -29,6 +29,7 @@ set expandtab
 set smarttab
 set autoindent
 set cursorline
+set ruler
 
 colorscheme jellybeans
 let &colorcolumn="80,".join(range(120,999),",")
