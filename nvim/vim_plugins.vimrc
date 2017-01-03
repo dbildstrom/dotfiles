@@ -12,6 +12,7 @@ Plug 'vim-scripts/tir_black'
 Plug 'duythinht/inori'
 
 " General plugins
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'vim-scripts/DirDiff.vim'
 Plug 'vim-scripts/tComment'
