@@ -45,3 +45,6 @@ let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,*.o,*.pyc,*.pyo,.svn"
 " Neomake
 autocmd! BufWritePost,BufEnter * Neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
+
+" requires https://github.com/jhawthorn/fzy to be installed
+nnoremap <C-p> :FuzzyOpen<CR>

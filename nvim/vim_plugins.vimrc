@@ -18,6 +18,7 @@ Plug 'vim-scripts/DirDiff.vim'
 Plug 'vim-scripts/tComment'
 Plug 'airblade/vim-gitgutter'
 Plug 'neomake/neomake'
+Plug 'cloudhead/neovim-fuzzy'
 
 " Plugins for work
 Plug 'tbjurman/vim-ah-schema'
