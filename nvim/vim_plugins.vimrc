@@ -20,6 +20,26 @@ Plug 'airblade/vim-gitgutter'
 Plug 'neomake/neomake'
 Plug 'cloudhead/neovim-fuzzy'
 
+" CSS
+Plug 'hail2u/vim-css3-syntax'
+Plug 'groenewege/vim-less'
+
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+
+" Elm
+Plug 'ElmCast/elm-vim'
+
+" Erlang
+Plug 'vim-erlang/vim-erlang-compiler'
+Plug 'vim-erlang/vim-erlang-omnicomplete'
+Plug 'vim-erlang/vim-erlang-skeletons'
+
+" JavaScript
+Plug 'othree/yajs.vim'
+Plug 'HerringtonDarkholme/yats.vim'
+
 " Plugins for work
 Plug 'tbjurman/vim-ah-schema'
 Plug 'tbjurman/vim-tbj-docgenerator'
