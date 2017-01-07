@@ -20,6 +20,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'neomake/neomake'
 Plug 'cloudhead/neovim-fuzzy'
 Plug 'python-mode/python-mode'
+Plug 'gabrielelana/vim-markdown'
 
 " CSS
 Plug 'hail2u/vim-css3-syntax'
