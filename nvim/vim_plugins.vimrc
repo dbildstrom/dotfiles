@@ -19,6 +19,7 @@ Plug 'vim-scripts/tComment'
 Plug 'airblade/vim-gitgutter'
 Plug 'neomake/neomake'
 Plug 'cloudhead/neovim-fuzzy'
+Plug 'python-mode/python-mode'
 
 " CSS
 Plug 'hail2u/vim-css3-syntax'
