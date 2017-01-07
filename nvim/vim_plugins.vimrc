@@ -1,6 +1,7 @@
 call plug#begin() 
 " Color schemes
 Plug 'nanotech/jellybeans.vim'
+Plug 'sickill/vim-monokai'
 Plug 'nelstrom/vim-mac-classic-theme'
 Plug 'acarapetis/vim-colors-github'
 Plug 'guns/jellyx.vim'
