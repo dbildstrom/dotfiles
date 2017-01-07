@@ -21,6 +21,8 @@ Plug 'neomake/neomake'
 Plug 'cloudhead/neovim-fuzzy'
 Plug 'python-mode/python-mode'
 Plug 'gabrielelana/vim-markdown'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'tpope/vim-surround'
 
 " CSS
 Plug 'hail2u/vim-css3-syntax'
