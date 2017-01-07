@@ -30,19 +30,18 @@ is_git_repository () {
 set_git_branch () {
   local -A pc
     pc=(${(kv)prompt_colors})
-    local git_status="$(git status 2> /dev/null)"
+    local git_status="$(git status --porcelain 2> /dev/null)"
     local state=""
+    local number_of_untracked_files=$(\grep -c "^??" <<< "${git_status}")
 
-    if [[ ${git_status} =~ "working tree clean" ]]; then
-        state="$pc[git_clean_branch]"
-    elif [[ ${git_status} =~ "Changes to be committed" ]]; then
+    if [[ $git_status =~ ($'\n'|^)[MAD] ]]; then
         state="$pc[git_uncommitted_changes]"
-    elif [[ ${git_status} =~ "Changes not staged" ]]; then
+    elif [[ $git_status =~ ($'\n'|^).[MAD] ]]; then
         state="$pc[git_unstaged_changes]"
-    elif [[ ${git_status} =~ "Untracked files" ]]; then
+    elif [[ $number_of_untracked_files -gt 0 ]]; then
         state="$pc[git_untracked_files]"
     else
-        state="$pc[git_unclean_branch]"
+        state="$pc[git_clean_branch]"
     fi
 
   local branch="<untitled>"
