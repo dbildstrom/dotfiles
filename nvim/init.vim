@@ -37,6 +37,10 @@ let &colorcolumn="80,".join(range(120,999),",")
 nmap <leader>sv :source $MYVIMRC<cr>
 nnoremap <C-N> :bn<CR>
 nnoremap <C-P> :bp<CR>
+nnoremap <C-W>- :sp<CR>
+nnoremap <C-W>_ :sp<CR>
+nnoremap <C-W>\| :vs<CR>
+nnoremap <C-W>\ :vs<CR>
 map <leader>c :TComment<cr>
 nmap <silent> <leader>/ :set hlsearch!<CR>
 
