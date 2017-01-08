@@ -51,3 +51,6 @@ nnoremap <C-p> :FuzzyOpen<CR>
 
 " Save file with sudo
 cmap w!! w !sudo tee % >/dev/null
+
+" abbreviation for inserting current timestamp
+iab TIME <C-R>=strftime("%c")<CR>
