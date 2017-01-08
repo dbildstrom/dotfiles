@@ -48,3 +48,6 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 
 " requires https://github.com/jhawthorn/fzy to be installed
 nnoremap <C-p> :FuzzyOpen<CR>
+
+" Save file with sudo
+cmap w!! w !sudo tee % >/dev/null
