@@ -42,6 +42,9 @@ nnoremap <C-W>_ :sp<CR>
 nnoremap <C-W>\| :vs<CR>
 nnoremap <C-W>\ :vs<CR>
 map <leader>c :TComment<cr>
+map <leader>bt :call CodeTag("TODO")<cr>
+map <leader>bn :call CodeTag("NOTE")<cr>
+map <leader>bf :call CodeTag("FIXME")<cr>
 nmap <silent> <leader>/ :set hlsearch!<CR>
 
 let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,*.o,*.pyc,*.pyo,.svn"
@@ -58,3 +61,18 @@ cmap w!! w !sudo tee % >/dev/null
 
 " abbreviation for inserting current timestamp
 iab TIME <C-R>=strftime("%c")<CR>
+
+function! CodeTag(ploppType)
+    " https://www.python.org/dev/peps/pep-0350/
+    execute "normal O" . a:ploppType . "(" . g:todoName . "): "
+    :TComment
+    startinsert!
+endfunction
+
+if has("autocmd")
+  " Highlight TODO, FIXME, NOTE, etc.
+  if v:version > 701
+    autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
+    autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
+  endif
+endif
