@@ -20,3 +20,4 @@
     tagss2 = !git tag -l | sort -V
     untagged = !git log `git describe --tags --abbrev=0`~1..HEAD --oneline --decorate=short --graph
     purge = clean -ffxd
+    revert = checkout
