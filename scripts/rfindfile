@@ -1,0 +1,26 @@
+#!/bin/sh
+
+function search_backwards()
+{
+    local FILENAME="${1}"
+
+    local DIRNAME="$(realpath .)"
+    local COUNT=15
+    local FILEPATH=""
+    while [[ "${DIRNAME}" != "/" ]];do
+        FILEPATH="${DIRNAME}/${FILENAME}"
+        if [[ -r  "${FILEPATH}" ]];then
+            break
+        fi
+        DIRNAME=`dirname "${DIRNAME}"`
+        FILEPATH=""
+        # COUNT=$(${COUNT} - 1)
+        ((COUNT-=1))
+        if [[ "${COUNT}" -le 1 ]];then
+            break
+        fi
+    done
+    echo "${FILEPATH}"
+}
+
+search_backwards "$1"
