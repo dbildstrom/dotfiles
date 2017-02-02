@@ -19,3 +19,4 @@
     tagss = for-each-ref --sort=v:refname --format=\"%(color:white)%(color:bold)%(refname:short)\t%(color:red)%(authorname)\t%(color:blue)%(authordate:relative)\" refs/tags
     tagss2 = !git tag -l | sort -V
     untagged = !git log `git describe --tags --abbrev=0`~1..HEAD --oneline --decorate=short --graph
+    purge = clean -ffxd
