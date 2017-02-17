@@ -8,6 +8,8 @@
     sd = svn dcommit
     gsc = svn clone --prefix=svn/ -s -A /home/bildsdav/Authors.txt
     st = status
+    sta = status -uall
+    stu = status -uno
     hist = log --oneline --decorate=short --graph
     history = log --oneline --decorate=short --graph --all
     logg = log --pretty=format:\"%C(red)%h%Creset%C(auto)%d%Creset %s%C(bold green) %C(bold green)(%ar) %C(bold blue)(%an)%Creset\" --graph
