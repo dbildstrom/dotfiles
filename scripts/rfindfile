@@ -1,26 +1,10 @@
 #!/bin/sh
 
-function abspath()
-{
-    local INPATH="$1"
-    if [[ -z "${INPATH}" ]];then
-        echo "Missing path argument"
-        exit -1
-    fi
-    local DIRNAME=`dirname "${INPATH}"`
-    local PATHEN=`cd "${DIRNAME}"; pwd -P`
-    if [[ -f "$INPATH" ]];then
-        FILENAME=`basename "${INPATH}"`
-        PATHEN="${PATHEN}/${FILENAME}"
-    fi
-    echo "${PATHEN}"
-}
-
 function search_backwards()
 {
     local FILENAME="${1}"
 
-    local DIRNAME="$(abspath .)"
+    local DIRNAME="$(absp .)"
     local COUNT=15
     local FILEPATH=""
     while [[ "${DIRNAME}" != "/" ]];do
