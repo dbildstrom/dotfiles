@@ -36,6 +36,15 @@ export PATH=~/bin:$PATH
 export EDITOR='vim'
 alias public_ip="curl -s http://ipinfo.io/ip"
 
+function find_gitconfig() {
+    local GITCONFIG=`rfindfile .gitconfig`
+    if [[ -z "${GITCONFIG}" ]];then
+        GITCONFIG=$(absp ~/.gitconfig)
+    fi
+    echo `dirname "${GITCONFIG}"`
+}
+
+alias git="HOME=\$(find_gitconfig) git"
 if [[ -f ~/.zshrc_local ]];then
     . ~/.zshrc_local
 fi
