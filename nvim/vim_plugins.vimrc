@@ -56,6 +56,8 @@ Plug 'vim-erlang/vim-erlang-omnicomplete'
 Plug 'vim-erlang/vim-erlang-skeletons'
 
 " JavaScript
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'othree/yajs.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
