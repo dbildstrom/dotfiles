@@ -61,6 +61,9 @@ Plug 'mxw/vim-jsx'
 Plug 'othree/yajs.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 
+" JSON
+Plug 'leshill/vim-json'
+
 " Plugins for work
 Plug 'tbjurman/vim-ah-schema'
 Plug 'tbjurman/vim-tbj-docgenerator'
