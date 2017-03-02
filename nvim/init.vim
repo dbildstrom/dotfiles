@@ -76,3 +76,5 @@ if has("autocmd")
     autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
   endif
 endif
+
+let g:jsx_ext_required = 0
