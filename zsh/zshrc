@@ -31,8 +31,12 @@ if [[ "$TERM" == "xterm" ]]; then
     export TERM=xterm-256color
 fi
 
+export GOPATH=~/gocode
 
-export PATH=~/bin:$PATH
+if [[ ! -d $GOPATH ]];then
+    mkdir -p $GOPATH
+fi
+export PATH=~/bin:$GOPATH/bin:$PATH
 export EDITOR='vim'
 alias public_ip="curl -s http://ipinfo.io/ip"
 
