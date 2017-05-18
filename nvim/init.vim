@@ -75,6 +75,7 @@ if has("autocmd")
     autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
     autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
   endif
+  autocmd BufNewFile,BufRead *confd.conf*,ncs.conf* :setlocal filetype=xml
 endif
 
 let g:jsx_ext_required = 0
