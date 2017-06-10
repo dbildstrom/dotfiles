@@ -38,6 +38,11 @@ Plug 'python-mode/python-mode'
 Plug 'gabrielelana/vim-markdown'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
+" Plug 'alvan/vim-closetag'
+" Plug 'Raimondi/delimitMate'
+" Plug 'fidian/hexmode'
+" Plug 'terryma/vim-multiple-cursors'
+" Plug 'ap/vim-buftabline'
 
 " CSS
 Plug 'hail2u/vim-css3-syntax'
@@ -63,6 +68,9 @@ Plug 'HerringtonDarkholme/yats.vim'
 
 " JSON
 Plug 'leshill/vim-json'
+
+" Markdown
+Plug 'miyakogi/livemark.vim'
 
 " Plugins for work
 Plug 'tbjurman/vim-ah-schema'
