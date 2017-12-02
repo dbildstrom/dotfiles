@@ -1,0 +1,1 @@
+cat ~/.i3/base.config ~/.i3/autostart.config > ~/.i3/config
