@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# exit script if something fails
+set -e
+
+if hash ~/bin/i3lock-next 2>/dev/null; then
+    `~//bin/i3lock-next "Enter password" "DejaVu Sans Mono" 20`
+else
+    `i3lock -c 000000`
+fi
