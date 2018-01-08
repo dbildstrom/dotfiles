@@ -1,0 +1,44 @@
+
+function is_tmux() {
+    if [[ ${TMUX+x} ]];then
+        echo "is_tmux"
+    fi
+}
+
+function tmux_window_has_single_pane()
+{
+    if [[ `tmux list-panes | wc -l | tr -d "\t "` == "1" ]];then
+        echo "single_pane"
+    fi
+}
+
+function tmux_find_env_file()
+{
+    TMUX_SESSION_ROOT="$1"
+    ENV_FILE="$2"
+    if [[ $(is_tmux) && -n $ENV_FILE ]];then
+        TMUX_SESSION=`tmux display-message -p '#S'`
+        TMUX_SESSION=${TMUX_SESSION//\~/.}
+        ENV_PATH="${TMUX_SESSION_ROOT}/${TMUX_SESSION}/$ENV_FILE"
+        if [[ -f $ENV_PATH ]];then
+            echo "${ENV_PATH}"
+        fi
+    fi
+}
+
+function tmux_window_dir()
+{
+    ENV_BASE_DIR=$(dirname `absp $1`)
+    if [[ $(is_tmux) && $(tmux_window_has_single_pane) && -d "${ENV_BASE_DIR}" ]];then
+        cd $ENV_BASE_DIR
+    fi
+}
+
+function tmux_init_window()
+{
+    ENV_FILE=$(tmux_find_env_file "$1" "$2")
+    if [[ -f $ENV_FILE ]];then
+        source $ENV_FILE
+        tmux_window_dir "$ENV_FILE"
+    fi
+}
