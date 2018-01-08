@@ -1,0 +1,4 @@
+selectp -t 0                                # Select pane 0
+splitw -h -p 75  -c '#{pane_current_path}'  # Split pane 0 vertically by 25/75
+selectp -t 0                                # Select pane 0
+splitw -v -p 90  -c '#{pane_current_path}'  # Split pane 0 horizontally by 10/90
