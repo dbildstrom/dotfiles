@@ -28,37 +28,26 @@ is_git_repository () {
 }
 
 set_git_branch () {
-  local -A pc
+    local -A pc
     pc=(${(kv)prompt_colors})
-    local git_status="$(git status --porcelain 2> /dev/null)"
+    local git_status="$(git status --porcelain -uno 2> /dev/null)"
     local state=""
-    local number_of_untracked_files=$(\grep -c "^??" <<< "${git_status}")
 
     if [[ $git_status =~ ($'\n'|^)[MAD] ]]; then
         state="$pc[git_uncommitted_changes]"
     elif [[ $git_status =~ ($'\n'|^).[MAD] ]]; then
         state="$pc[git_unstaged_changes]"
-    elif [[ $number_of_untracked_files -gt 0 ]]; then
-        state="$pc[git_untracked_files]"
+    # elif [[ $(git ls-files --other --exclude-standard --directory --no-directory | wc -l) -gt 0 ]]; then
+    #     state="$pc[git_untracked_files]"
     else
         state="$pc[git_clean_branch]"
     fi
 
-  local branch="<untitled>"
-  local name="`git symbolic-ref -q HEAD`"
-  if [ $? -eq 0 ];then
-    if [[ $name == refs/(heads|tags)/* ]];then
-        name=${name#refs/(heads|tags)/}
+    local branch="<untitled>" # TODO: should probably be <no branch> or something
+    local name="`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`"
+    if [ -n "${name}" ];then
+        branch="${name}"
     fi
-  else
-    name="`git name-rev --name-only --no-undefined --always HEAD`"
-    if [ $? -ne 0 ];then
-        return 1
-    elif [[ $name == remotes/* ]];then
-        name=${name#remotes/}
-    fi
-  fi
-  branch="${name}"
     echo " ${state}(${branch})$pc[reset]"
 }
 

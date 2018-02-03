@@ -49,6 +49,9 @@ function find_gitconfig() {
 }
 
 alias git="HOME=\$(find_gitconfig) git"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 if [[ -f ~/.zshrc_local ]];then
     . ~/.zshrc_local
 fi
