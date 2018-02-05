@@ -24,6 +24,6 @@
     tagss2 = !git tag -l | sort -V
     untagged = !git log `git describe --tags --abbrev=0`~1..HEAD --oneline --decorate=short --graph
     compare = log --left-right --graph --cherry-pick --oneline
-    purge = clean -ffxd
+    pristine = clean -ffxd
     revert = checkout
     revertall = !git checkout `pwd`
