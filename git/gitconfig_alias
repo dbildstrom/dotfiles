@@ -7,6 +7,7 @@
     co = checkout
     sr = svn rebase
     sd = svn dcommit
+    tf = diff --name-status
     gsc = svn clone --prefix=svn/ -s -A /home/bildsdav/Authors.txt
     st = status
     sta = status -uall
