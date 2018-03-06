@@ -63,10 +63,12 @@ Plug 'vim-erlang/vim-erlang-omnicomplete'
 Plug 'vim-erlang/vim-erlang-skeletons'
 
 " JavaScript
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+" Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
+Plug 'gavocanov/vim-js-indent'
+Plug 'mxw/vim-jsx'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'alunny/pegjs-vim'
 
 " JSON
 Plug 'leshill/vim-json'
