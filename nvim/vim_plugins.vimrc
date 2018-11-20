@@ -41,6 +41,7 @@ Plug 'neomake/neomake'
 Plug 'cloudhead/neovim-fuzzy'
 Plug 'python-mode/python-mode'
 Plug 'gabrielelana/vim-markdown'
+Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch'
@@ -81,6 +82,9 @@ Plug 'alunny/pegjs-vim'
 
 " JSON
 Plug 'leshill/vim-json'
+
+" Manpages
+Plug 'vim-utils/vim-man'
 
 " Markdown
 Plug 'miyakogi/livemark.vim'
