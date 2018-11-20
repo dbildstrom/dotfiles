@@ -1,6 +1,8 @@
 [alias]
     aa = add --all
     alias = !git config --list | grep alias | sort
+    cp = cherry-pick
+    cpx = cherry-pick -x
     d = diff
     dc = diff --cached
     ci = commit
@@ -17,6 +19,7 @@
     history = log --oneline --decorate=short --graph --all
     logg = log --pretty=format:\"%C(red)%h%Creset%C(auto)%d%Creset %s%C(bold green) %C(bold green)(%ar) %C(bold blue)(%an)%Creset\" --graph
     logga = log --pretty=format:\"%C(red)%h%Creset%C(auto)%d%Creset %s%C(bold green) %C(bold green)(%ar) %C(bold blue)(%an)%Creset\" --graph --all
+    loggc = log --pretty=format:\"%C(red)%h%Creset%C(auto)%d%Creset %s%C(bold green) %C(bold green)(%ad) %C(bold magenta)(%cd) %C(bold blue)(%an)%Creset\" --graph --date=format:'%Y-%m-%d %H:%M'
     ls = ls-tree --abbrev HEAD
     rbranches = for-each-ref --sort=committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
     branches = for-each-ref --sort=committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/heads
@@ -28,3 +31,4 @@
     pristine = clean -ffxd
     revert = checkout
     revertall = !git checkout `pwd`
+    oldest-ancestor = !zsh -c 'diff --old-line-format='' --new-line-format='' <(git rev-list --first-parent "${1:-trunk}") <(git rev-list --first-parent "${2:-HEAD}") | head -1'
