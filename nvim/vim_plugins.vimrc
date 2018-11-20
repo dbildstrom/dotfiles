@@ -25,6 +25,7 @@ Plug 'sonph/onehalf'
 Plug 'lifepillar/vim-wwdc16-theme'
 Plug 'chriskempson/base16-vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'evturn/vim-hardaway'
 
 " General plugins
 Plug 'christoomey/vim-tmux-navigator'
