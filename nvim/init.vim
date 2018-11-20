@@ -10,10 +10,11 @@ filetype plugin indent on
 syntax on
 set mouse=
 
-set directory=$VIMHOME/swap_files//
-set backupdir=$VIMHOME/backup_files//
-set undodir=$VIMHOME/undo_files//
+set directory=$HOME/.vim_meta/swap_files//
+set backupdir=$HOME/.vim_meta/backup_files//
+set undodir=$HOME/.vim_meta/undo_files//
 
+au FocusGained,BufEnter * :silent! checktime
 set nocompatible
 set nobomb
 set hlsearch
@@ -30,6 +31,7 @@ set smarttab
 set autoindent
 set cursorline
 set ruler
+set foldlevel=20
 
 colorscheme jellybeans
 let &colorcolumn="80,".join(range(120,999),",")
@@ -79,5 +81,7 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *confd.conf*,ncs.conf* :setlocal filetype=xml
 endif
 
+let pymode_rope = 0
+let pymode_lint = 0
 let g:jsx_ext_required = 0
 source $VIMHOME/git_functions.vim
