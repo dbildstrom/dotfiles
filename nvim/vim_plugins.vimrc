@@ -40,6 +40,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
+Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'alvan/vim-closetag'
 " Plug 'Raimondi/delimitMate'
 " Plug 'fidian/hexmode'
@@ -50,17 +51,20 @@ Plug 'tpope/vim-fugitive'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'groenewege/vim-less'
 
+" Docker
+Plug 'ekalinin/Dockerfile.vim'
+
 " Elixir
-Plug 'elixir-lang/vim-elixir'
-Plug 'slashmili/alchemist.vim'
+" Plug 'elixir-lang/vim-elixir'
+" Plug 'slashmili/alchemist.vim'
 
 " Elm
 Plug 'ElmCast/elm-vim'
 
 " Erlang
-Plug 'vim-erlang/vim-erlang-compiler'
-Plug 'vim-erlang/vim-erlang-omnicomplete'
-Plug 'vim-erlang/vim-erlang-skeletons'
+" Plug 'vim-erlang/vim-erlang-compiler'
+" Plug 'vim-erlang/vim-erlang-omnicomplete'
+" Plug 'vim-erlang/vim-erlang-skeletons'
 
 " JavaScript
 " Plug 'pangloss/vim-javascript'
