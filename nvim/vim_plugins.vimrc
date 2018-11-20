@@ -24,8 +24,12 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'sonph/onehalf'
 Plug 'lifepillar/vim-wwdc16-theme'
 Plug 'chriskempson/base16-vim'
+Plug 'croaker/mustang-vim'
+Plug 'jonathanfilip/vim-lucius'
+Plug 'vim-scripts/twilight256.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'evturn/vim-hardaway'
+Plug 'arcticicestudio/nord-vim'
 
 " General plugins
 Plug 'christoomey/vim-tmux-navigator'
