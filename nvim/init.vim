@@ -84,4 +84,6 @@ endif
 let pymode_rope = 0
 let pymode_lint = 0
 let g:jsx_ext_required = 0
+
+source $VIMHOME/watch_for_changes.vim
 source $VIMHOME/git_functions.vim
