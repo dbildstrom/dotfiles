@@ -44,7 +44,7 @@ nnoremap <C-W>_ :sp<CR>
 nnoremap <C-W>\| :vs<CR>
 nnoremap <C-W>\ :vs<CR>
 map <leader>c :TComment<cr>
-map <leader>g :call ToggleGitBase()<cr>
+map <leader>gb :call ToggleGitBase()<cr>
 map <leader>bt :call CodeTag("TODO")<cr>
 map <leader>bn :call CodeTag("NOTE")<cr>
 map <leader>bf :call CodeTag("FIXME")<cr>
