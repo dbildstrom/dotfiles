@@ -24,8 +24,12 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'sonph/onehalf'
 Plug 'lifepillar/vim-wwdc16-theme'
 Plug 'chriskempson/base16-vim'
+Plug 'croaker/mustang-vim'
+Plug 'jonathanfilip/vim-lucius'
+Plug 'vim-scripts/twilight256.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'evturn/vim-hardaway'
+Plug 'arcticicestudio/nord-vim'
 
 " General plugins
 Plug 'christoomey/vim-tmux-navigator'
@@ -37,6 +41,7 @@ Plug 'neomake/neomake'
 Plug 'cloudhead/neovim-fuzzy'
 Plug 'python-mode/python-mode'
 Plug 'gabrielelana/vim-markdown'
+Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch'
@@ -77,6 +82,9 @@ Plug 'alunny/pegjs-vim'
 
 " JSON
 Plug 'leshill/vim-json'
+
+" Manpages
+Plug 'vim-utils/vim-man'
 
 " Markdown
 Plug 'miyakogi/livemark.vim'
