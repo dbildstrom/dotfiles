@@ -1,6 +1,6 @@
 
 function is_tmux() {
-    if [[ ${TMUX+x} ]];then
+    if [ -n "${TMUX+x}" ];then
         echo "is_tmux"
     fi
 }
@@ -16,7 +16,7 @@ function tmux_find_env_file()
 {
     TMUX_SESSION_ROOT="$1"
     ENV_FILE="$2"
-    if [[ $(is_tmux) && -n $ENV_FILE ]];then
+    if [[ -n "$(is_tmux)" && -n $ENV_FILE ]];then
         TMUX_SESSION=`tmux display-message -p '#S'`
         TMUX_SESSION=${TMUX_SESSION//\~/.}
         ENV_PATH="${TMUX_SESSION_ROOT}/${TMUX_SESSION}/$ENV_FILE"
@@ -29,7 +29,7 @@ function tmux_find_env_file()
 function tmux_window_dir()
 {
     ENV_BASE_DIR=$(dirname `absp $1`)
-    if [[ $(is_tmux) && $(tmux_window_has_single_pane) && -d "${ENV_BASE_DIR}" ]];then
+    if [[ -n "$(is_tmux)" && -n "$(tmux_window_has_single_pane)" && -d "${ENV_BASE_DIR}" ]];then
         cd $ENV_BASE_DIR
     fi
 }
