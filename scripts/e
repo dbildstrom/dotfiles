@@ -1,0 +1,9 @@
+#!/bin/sh
+
+EMACS_DAEMON_NAME="global"
+
+if [ "${CONFDX_DIR}" != "" ]; then
+    EMACS_DAEMON_NAME=$(basename "${CONFDX_DIR}")
+fi
+
+ALTERNATE_EDITOR="" emacsclient -t -s "${EMACS_DAEMON_NAME}"
