@@ -6,4 +6,4 @@ if [ "${CONFDX_DIR}" != "" ]; then
     EMACS_DAEMON_NAME=$(basename "${CONFDX_DIR}")
 fi
 
-ALTERNATE_EDITOR="" emacsclient -t -s "${EMACS_DAEMON_NAME}"
+ALTERNATE_EDITOR="" emacsclient -t -s "${EMACS_DAEMON_NAME}" $@
